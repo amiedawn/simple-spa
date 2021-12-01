@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <div className="navbar">
       <ul>
@@ -10,6 +10,6 @@ function Navbar() {
       </ul>
     </div>
   );
-}
+};
 
 export default Navbar;

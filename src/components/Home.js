@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Home() {
+const Home = () => {
   return (
     <div className="home">
       <h1>GOT QUESTIONS?</h1>
@@ -10,6 +10,6 @@ function Home() {
       </p>
     </div>
   );
-}
+};
 
 export default Home;

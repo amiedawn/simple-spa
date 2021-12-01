@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header></Header>
