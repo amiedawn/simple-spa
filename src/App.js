@@ -8,9 +8,9 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header name="Joe"></Header>
       <Navbar></Navbar>
-      <Home></Home>
+      <Home name="Amie"></Home>
     </div>
   );
 }
