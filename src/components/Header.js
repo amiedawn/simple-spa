@@ -15,7 +15,7 @@ class Header extends React.Component {
     return (
       <div>
         <h1 className="header">Simple SPA</h1>
-        <p>Hi, my name is {this.props.name}</p>
+        <p>Hi, I am {this.props.age} years old.</p>
       </div>
     );
   }

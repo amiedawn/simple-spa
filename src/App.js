@@ -8,7 +8,7 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-      <Header name="Joe"></Header>
+      <Header age="27"></Header>
       <Navbar></Navbar>
       <Home name="Amie"></Home>
     </div>
