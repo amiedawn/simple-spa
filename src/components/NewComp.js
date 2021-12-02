@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import bell1 from '../logo512.png';
-import bell2 from '../logo192.png';
+import bell1 from '../bell1.jpg';
+import bell2 from '../bell2.jpg';
 
 class NewComp extends Component {
   constructor(props) {
@@ -12,6 +12,11 @@ class NewComp extends Component {
     }
   }
 
+  styles = {
+    width: "100px",
+    height: "100px"
+  }
+  
   buttonChange = () => {
     this.setState ({
       message: "Hit the bell icon to never miss an update",
@@ -32,10 +37,12 @@ class NewComp extends Component {
         <h3>{this.state.message}</h3>
         <button onClick={this.buttonChange}>{this.state.sub}</button>
         <img  
-          style = {{width: "50px", height: "70px"}}
+          // style = {{width: "50px", height: "70px"}}
+          style= {this.styles}
           src= {this.state.imageUrl}
           onClick={this.imageChange}
-          alt="" />
+          alt=""
+        />
       </div>
     )
   }
