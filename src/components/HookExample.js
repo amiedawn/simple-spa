@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function HookExample(props) {
+function HookExample() {
   const [count, setCount] = useState(0);
   //const [color, setColor] = useState("Red");
   
