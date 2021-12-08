@@ -1,3 +1,5 @@
+//goes with Child1 to show parent to child prop sharing
+
 import React, {useState} from 'react';
 import Child1 from './Child1';
 import '../App.css';

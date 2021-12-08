@@ -1,3 +1,5 @@
+//goes with Parent1 to show parent to child prop sharing
+
 import React from 'react';
 
 

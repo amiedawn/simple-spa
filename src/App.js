@@ -26,6 +26,7 @@ import ComponentA from './components/compA/ComponentA';
 import ComponentB from './components/compB/ComponentB';
 import ComponentC from './components/compC/ComponentC';
 import MainComp from './components/MainComp';
+import Parent from './components/Parent';
 
 // normal way to write functional component
 function App() {
@@ -92,6 +93,11 @@ function App() {
       <p>*************</p>
       <ColorParent />
       <p>***************</p>
+
+      {/* child to parent prop sharing*/}
+      <Parent />  
+
+      <p>***************</p>
       <StyledComponent />
       <p>***************</p>
       <RefHook />
@@ -114,6 +120,8 @@ function App() {
       <HookExample2 />
       <UseEffect />
       <UseEffectNew />
+
+      
     </div>
   );
 };
