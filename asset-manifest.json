@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/budget-planner/static/css/main.503d9b6f.chunk.css",
-    "main.js": "/budget-planner/static/js/main.1f458d0f.chunk.js",
-    "main.js.map": "/budget-planner/static/js/main.1f458d0f.chunk.js.map",
-    "runtime-main.js": "/budget-planner/static/js/runtime-main.8f0d43c6.js",
-    "runtime-main.js.map": "/budget-planner/static/js/runtime-main.8f0d43c6.js.map",
-    "static/css/2.383c0125.chunk.css": "/budget-planner/static/css/2.383c0125.chunk.css",
-    "static/js/2.4b87bb3e.chunk.js": "/budget-planner/static/js/2.4b87bb3e.chunk.js",
-    "static/js/2.4b87bb3e.chunk.js.map": "/budget-planner/static/js/2.4b87bb3e.chunk.js.map",
-    "index.html": "/budget-planner/index.html",
-    "static/css/2.383c0125.chunk.css.map": "/budget-planner/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.503d9b6f.chunk.css.map": "/budget-planner/static/css/main.503d9b6f.chunk.css.map",
-    "static/js/2.4b87bb3e.chunk.js.LICENSE.txt": "/budget-planner/static/js/2.4b87bb3e.chunk.js.LICENSE.txt",
-    "static/media/bell2.9f708f7b.jpg": "/budget-planner/static/media/bell2.9f708f7b.jpg"
+    "main.css": "/simple-spa/static/css/main.503d9b6f.chunk.css",
+    "main.js": "/simple-spa/static/js/main.1f458d0f.chunk.js",
+    "main.js.map": "/simple-spa/static/js/main.1f458d0f.chunk.js.map",
+    "runtime-main.js": "/simple-spa/static/js/runtime-main.c7713a50.js",
+    "runtime-main.js.map": "/simple-spa/static/js/runtime-main.c7713a50.js.map",
+    "static/css/2.383c0125.chunk.css": "/simple-spa/static/css/2.383c0125.chunk.css",
+    "static/js/2.4eb6d782.chunk.js": "/simple-spa/static/js/2.4eb6d782.chunk.js",
+    "static/js/2.4eb6d782.chunk.js.map": "/simple-spa/static/js/2.4eb6d782.chunk.js.map",
+    "index.html": "/simple-spa/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/simple-spa/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.503d9b6f.chunk.css.map": "/simple-spa/static/css/main.503d9b6f.chunk.css.map",
+    "static/js/2.4eb6d782.chunk.js.LICENSE.txt": "/simple-spa/static/js/2.4eb6d782.chunk.js.LICENSE.txt",
+    "static/media/bell2.9f708f7b.jpg": "/simple-spa/static/media/bell2.9f708f7b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f0d43c6.js",
+    "static/js/runtime-main.c7713a50.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.4b87bb3e.chunk.js",
+    "static/js/2.4eb6d782.chunk.js",
     "static/css/main.503d9b6f.chunk.css",
     "static/js/main.1f458d0f.chunk.js"
   ]
