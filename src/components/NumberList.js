@@ -4,12 +4,13 @@ function NumberList(props) {
   const numbers = props.numbers;
 
   const listItems = numbers.map((number) =>
-    <p key= {number.toString()}>{number*number}</p>
+    // listItems becomes a list of numbers or an array of 5 <li> tags
+    <li key= {number.toString()}>{number * number}</li>
   );
   return (
-    <div>
+    <ul>
       {listItems}
-    </div>
+    </ul>
   );
 }
 

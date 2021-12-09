@@ -1,6 +1,6 @@
 //goes with Parent1 to show parent to child prop sharing
 
-import React from 'react';
+import React, {u} from 'react';
 
 
 function Child1(props) {
