@@ -1,5 +1,7 @@
-import React, {useContext} from "react";
-import {UserContext} from './Component1';
+// prop drilling in Components1 - Components4
+
+import React, { useContext } from "react";
+import { UserContext } from "./Component1";
 
 function Component4() {
   const user = useContext(UserContext);

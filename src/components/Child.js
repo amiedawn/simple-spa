@@ -1,13 +1,22 @@
-// goes with Parent component to show child to parent prop sharing
+// goes with Parent component to show child to parent prop sharing data
 
 import React from 'react';
 
-export default function Child ({childToParent}) {
+// export default function Child ({childToParent}) {
+//   const data = "This is data from Child component passing to the Parent component";
+//   return (
+//     <div>
+//       <button onClick={() => childToParent(data)}>Click Child</button>
+//     </div>
+//   );  
+// };
+
+//other option is through props
+export default function Child (props) {
   const data = "This is data from Child component passing to the Parent component";
   return (
     <div>
-      <h3>This example shows child to parent prop passing</h3>
-      <button onClick={() => childToParent(data)}>Click Child</button>
+      <button onClick={() => props.childToParent(data)}>Click Child</button>
     </div>
   );  
 };

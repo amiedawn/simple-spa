@@ -1,5 +1,7 @@
+// prop drilling in Components1 - Components4
+
 import React from "react";
-import Component3 from './Component3';
+import Component3 from "./Component3";
 
 function Component2() {
   return (
@@ -8,6 +10,6 @@ function Component2() {
       <Component3 />
     </div>
   );
-};
+}
 
 export default Component2;

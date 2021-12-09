@@ -1,4 +1,4 @@
-// goes with Child to show child to parent prop sharing
+// goes with Child to show child to parent prop sharing data
 
 import React, {useState} from 'react';
 import Child from './Child';

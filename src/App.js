@@ -27,6 +27,9 @@ import ComponentB from './components/compB/ComponentB';
 import ComponentC from './components/compC/ComponentC';
 import MainComp from './components/MainComp';
 import Parent from './components/Parent';
+import EventParent from './components/EventParent';
+import Sibling1 from './Sibling1';
+import Sibling2 from './Sibling2'
 
 // normal way to write functional component
 function App() {
@@ -44,28 +47,39 @@ function App() {
     setName(e.target.value);
   }
 
+  // pass data between siblings
+  const [selectedMessage, setMessage] = useState("");
+
   return (
     <div className="App">
       <MainComp page={page} />
-      <input type="radio" name="switchpages" onClick={() => setPage("aboutus")} />
+      <input
+        type="radio"
+        name="switchpages"
+        onClick={() => setPage("aboutus")}
+      />
       About Us
-      <input type="radio" name="switchpages" onClick={() => setPage("homecomp")} />
+      <input
+        type="radio"
+        name="switchpages"
+        onClick={() => setPage("homecomp")}
+      />
       Home
       <p>*************</p>
       <BrowserRouter>
         <nav>
-            <ul>
-              <li>
-                <Link to="/compA">CompA</Link>
-              </li>
-              <li>
-                <Link to="/compB">CompB</Link>
-              </li>
-              <li>
-                <Link to="/compC">CompC</Link>
-              </li>
-            </ul>
-          </nav>
+          <ul>
+            <li>
+              <Link to="/compA">CompA</Link>
+            </li>
+            <li>
+              <Link to="/compB">CompB</Link>
+            </li>
+            <li>
+              <Link to="/compC">CompC</Link>
+            </li>
+          </ul>
+        </nav>
         <Routes>
           <Route path="/compA" element={<ComponentA />}>
             Component A
@@ -85,18 +99,30 @@ function App() {
       <button onClick={() => changeUser("usera")}>Switch to User A</button>
       <button onClick={() => changeUser("userb")}>Switch to User B</button>
       <p>*************</p>
-      <Parent1 />
-      <p>*************</p>
       2-way data binding example (type in the box and that text will appear
       below): <input onChange={handleChange} value={name} />
       <h1>{name}</h1>
       <p>*************</p>
       <ColorParent />
+      <p>*************</p>
+      {/* parent to child prop sharing */}
+      <p>parent to child prop sharing</p>
+      <Parent1 />
       <p>***************</p>
-
       {/* child to parent prop sharing*/}
-      <Parent />  
-
+      <p>child to parent prop sharing</p>
+      <Parent />
+      <p>***************</p>
+      {/* goes with EventParent component to show child to parent prop sharing event */}
+      <p>child to parent event(alert) sharing</p>
+      <EventParent />
+      <p>***************</p>
+      {/* //pass data between siblings */}
+        <div>
+          <p>set a message in sibling 1 and click button to send data to sibling 2</p>
+          <Sibling1 setMessage = {setMessage} />
+          <Sibling2 selectedMessage = {selectedMessage} />
+        </div>
       <p>***************</p>
       <StyledComponent />
       <p>***************</p>
@@ -120,8 +146,6 @@ function App() {
       <HookExample2 />
       <UseEffect />
       <UseEffectNew />
-
-      
     </div>
   );
 };
