@@ -1,3 +1,5 @@
+// use with ColorChild
+
 import React, {useState} from 'react';
 import ColorChild from './ColorChild';
 

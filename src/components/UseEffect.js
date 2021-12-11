@@ -7,8 +7,8 @@ function Timer(props) {
     setTimeout(() => {
       setCount((count) => count + 1);
     }, 1000);
-  //}); // use this if you want it to run
-    }, []); // use this if you want it to stop
+ // }); // use this if you want it to run
+   }, []); // use this if you want it to stop
 
 
   return (

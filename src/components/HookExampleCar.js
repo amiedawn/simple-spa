@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function HookExample() {
+function HookExample2() {
   const [car, setCar] = useState({
     brand: "Ford",
     model: "mustang",
@@ -25,4 +25,4 @@ function HookExample() {
   );
 }
 
-export default HookExample;
+export default HookExample2;
