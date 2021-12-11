@@ -1,5 +1,4 @@
 // use with ColorParent
-import react, {useState} from 'react';
 
 const ColorChild = (props) => {
   

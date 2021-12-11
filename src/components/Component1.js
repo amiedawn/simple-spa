@@ -1,6 +1,6 @@
 // prop drilling in Components1 - Components4
 
-import React, { useState, useContext, createContext } from 'react'
+import React, { useState, createContext } from 'react'
 import Component2 from './Component2';
 
 const UserContext = createContext();

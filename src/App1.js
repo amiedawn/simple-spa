@@ -60,7 +60,7 @@ function App1() {
       <p>*** UserForm start ********** </p>
       <UserForm />
       <p>*** UserForm end ********** </p>
-      <p>*** MainComp, AboutUs, HomeComp start ********** </p>
+      <p>*** MainComp, AboutUs, HomeComp start (no routing) ********** </p>
       <MainComp page={page} />
       <input
         type="radio"
@@ -75,7 +75,7 @@ function App1() {
       />
       Home
       <p>*** MainComp, AboutUs, HomeComp end ********** </p>
-      <p>*** ComponentA, ComponentB, ComponentC start**********</p>
+      <p>*** ComponentA, ComponentB, ComponentC start (routing) ***</p>
       <BrowserRouter>
         <nav>
           <ul>
@@ -107,18 +107,17 @@ function App1() {
       {/* list of numbers to be squared */}
       <NumberList numbers={numbers} />
       <p>*** NumberList end **********</p>
-      <p>*** DynamicComp, UserA, UserB start **********</p>
+      <p>*** DynamicComp, UserA, UserB start (no routing) **********</p>
       <DynamicComp user={user} />
       <button onClick={() => changeUser("usera")}>Switch to User A</button>
       <button onClick={() => changeUser("userb")}>Switch to User B</button>
       <p>*** DynamicComp, UserA, UserB end **********</p>
       <p>
-        *** (does not use a component, only state in App.js) start **********
-      </p>
+        *** (2-way binding: does not use a component, only state in App.js) start ***</p>
       2-way data binding example (type in the box and that text will appear
       below): <input onChange={handleChange} value={name} />
       <h1>{name}</h1>
-      <p>*** (does not use a component, only state in App.js) end **********</p>
+      <p>*** (2-way binding: does not use a component, only state in App.js) end ***</p>
       <p>*** ColorParent and ColorChild start **********</p>
       <ColorParent />
       <p>*** ColorParent and ColorChild end **********</p>

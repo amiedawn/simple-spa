@@ -1,3 +1,5 @@
+// works with ComponentB and ComponentC
+
 import React from 'react';
 
 function ComponentA(props) {
