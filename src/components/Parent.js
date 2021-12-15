@@ -10,12 +10,12 @@ function Parent() {
     setData(childData);
   }
   return (
-    <div>
+    <p>
       {data}
       <div>
         <Child childToParent={childToParent} />
       </div>
-    </div>
+    </p>
   );
 }
 
